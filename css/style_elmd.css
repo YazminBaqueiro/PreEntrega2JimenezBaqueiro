@@ -79,6 +79,11 @@ a {
   background-position: center;
 }
 
+.item-background {
+  background-position: center;
+  background-size: cover;
+}
+
 .min-vh-50 {
   min-height: 50vh;
 }
@@ -90,21 +95,13 @@ footer ul li {
   list-style: none;
   margin-bottom: 10px;
 }
-/*footer a,*/
+
 footer p,
 footer input {
   font-size: 16px;
   line-height: 18px;
 }
-/*
-footer a {
-  color: #CBCBCB;
-}
-footer a.active,
-footer a:hover {
-  color: #fff;
-}
-*/
+
 .footer_logo img {
   height: 20px;
   width: auto;
