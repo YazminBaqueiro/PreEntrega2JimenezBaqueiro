@@ -69,12 +69,15 @@ a:hover {
 }
 
 .big_title {
-  font-size: 66px;
-  line-height: 70px;
+  font-size: clamp(3rem, 5vw + 0.5rem, 10rem);
+  line-height: clamp(3.2rem, 5vw + 0.7rem, 10.2rem);
 }
 
 .navbar-brand img {
   height: 50px;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 .menu_top {
