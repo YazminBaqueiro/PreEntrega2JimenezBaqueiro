@@ -1,10 +1,24 @@
 body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
   padding: 0;
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 a {
   text-decoration: none;
+  transition: 0.3s;
+}
+.big_title a {
+  color: #fff;
+}
+a:hover {
+  color: #ECD0C4;
 }
 
 .background_gray {
@@ -12,6 +26,30 @@ a {
 }
 .background_coral {
   background-color: #ECD0C4;
+}
+
+.btn-primary {
+  transition: 0.3s;
+  --bs-btn-color: #000;
+  --bs-btn-bg: #CBCBCB;
+  --bs-btn-border-color: #CBCBCB;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #ECD0C4;
+  --bs-btn-hover-border-color: #ECD0C4;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #ECD0C4;
+  --bs-btn-active-bg: #ECD0C4;
+  --bs-btn-active-border-color: #ECD0C4;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #555;
+  --bs-btn-disabled-border-color: #555;
+}
+
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .font_ghost {
@@ -33,6 +71,10 @@ a {
 .big_title {
   font-size: 66px;
   line-height: 70px;
+}
+
+.navbar-brand img {
+  height: 50px;
 }
 
 .menu_top {
@@ -77,11 +119,22 @@ a {
   height: 50vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image_header_background h1 {
+  display: flex;
 }
 
 .item-background {
   background-position: center;
   background-size: cover;
+}
+
+.carousel-caption h2,
+.image_header_background h1 {
+  text-shadow: 2px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 .min-vh-50 {
@@ -122,4 +175,30 @@ form button {
   color: #000;
   background-color: #CBCBCB;
   padding: 15px 30px;
+}
+
+.footer-logo {
+  max-width: 450px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 992px) {
+  .footer-logo {
+    max-width: 300px;
+  }
+  .image_header_background {
+    height: 45vh;
+  }
+}
+@media (max-width: 768px) {
+  .footer-logo {
+    max-width: 200px;
+  }
+  .image_header_background {
+    height: 40vh;
+  }
 }
